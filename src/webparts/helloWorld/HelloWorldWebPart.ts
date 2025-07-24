@@ -29,7 +29,10 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
         isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
         hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        userDisplayName: this.context.pageContext.user.displayName
+        userDisplayName: this.context.pageContext.user.displayName,
+        myNewProperty: "hello from new property",
+        siteUrl: this.context.pageContext.web.absoluteUrl,
+        spHttpClient: this.context.spHttpClient,
       }
     );
 
